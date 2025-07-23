@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f3;
+  text-align: center;
+  padding: 30px;
+}
+
+.vote-box {
+  background: white;
+  padding: 20px;
+  margin: auto;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+input {
+  padding: 10px;
+  width: 90%;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
