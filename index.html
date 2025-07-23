@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Voting App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🗳️ Vote for Your Favorite Candidate</h1>
+
+  <div class="vote-box">
+    <label for="voter">Your Name:</label><br>
+    <input type="text" id="voter" placeholder="Enter your name"><br><br>
+
+    <button onclick="castVote('Alice')">Vote for Alice</button>
+    <button onclick="castVote('Bob')">Vote for Bob</button>
+    <p id="response"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
