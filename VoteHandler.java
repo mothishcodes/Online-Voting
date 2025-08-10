@@ -5,8 +5,8 @@ import java.sql.*;
 public class VoteHandler {
 
     static final String DB_URL = "jdbc:mysql://localhost:3306/voting_app";
-    static final String DB_USER = "root";  // change as needed
-    static final String DB_PASS = "password"; // change as needed
+    static final String DB_USER = "root";  
+    static final String DB_PASS = "password"; 
 
     public static void main(String[] args) {
         try (ServerSocket serverSocket = new ServerSocket(5000)) {
