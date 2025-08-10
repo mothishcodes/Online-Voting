@@ -1,0 +1,10 @@
+CREATE DATABASE voting_app;
+
+USE voting_app;
+
+CREATE TABLE votes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    voter VARCHAR(100) UNIQUE NOT NULL,
+    candidate VARCHAR(100) NOT NULL,
+    vote_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
