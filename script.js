@@ -26,7 +26,7 @@ function castVote(candidate) {
     });
 }
 
-// Fetch live results
+
 function fetchResults() {
   fetch("http://localhost:5000/results")
     .then(res => res.json())
@@ -43,8 +43,7 @@ function fetchResults() {
     });
 }
 
-// Auto-refresh results every 5 seconds
+
 setInterval(fetchResults, 5000);
 
-// Fetch results on page load
 fetchResults();
