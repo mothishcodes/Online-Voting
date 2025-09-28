@@ -1,22 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Online Voting App</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<title>Online Voting</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-  <h1>🗳️ Vote for Your Favorite Candidate</h1>
+<h1>Cast your vote</h1>
+<form id="voteForm">
+<label for="voter_id">Voter ID:</label>
+<input id="voter_id" name="voter_id" required />
+<br />
+<label for="candidate">Candidate:</label>
+<select id="candidate" name="candidate">
+<option value="Rohit">Rohit</option>
+<option value="Mothish">Mothish</option>
+<option value="Raj">Raj</option>
+</select>
+<br />
+<button type="submit">Vote</button>
+</form>
 
-  <div class="vote-box">
-    <label for="voter">Your Name:</label><br>
-    <input type="text" id="voter" placeholder="Enter your name"><br><br>
 
-    <button onclick="castVote('Ram')">Vote for Ram</button>
-    <button onclick="castVote('Mukesh')">Vote for Mukesh</button>
-    <p id="response"></p>
-  </div>
+<div id="message" style="margin-top:12px;color:darkred;"></div>
 
-  <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
